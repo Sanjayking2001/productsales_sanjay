@@ -1,0 +1,496 @@
+/* background */
+
+body {
+  background-color: aqua;
+  background: linear-gradient(
+    45deg,
+    aqua,
+    rgb(230, 173, 215),
+    rgb(221, 255, 0),
+    aqua
+  );
+  background-size: 400% 400%;
+  animation: backgroundChange 10s infinite, colorChange 5s infinite alternate;
+}
+
+@keyframes backgroundChange {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes colorChange {
+  0% {
+    background-color: aqua;
+  }
+  50% {
+    background-color: rgb(
+      173,
+      230,
+      199
+    ); /* Change this color to your desired target color */
+  }
+  100% {
+    background-color: rgb(221, 0, 255);
+  }
+}
+header {
+  text-align: center;
+}
+h3 {
+  text-align: center;
+}
+h1-style {
+  font-family: "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+
+.div-left {
+  padding-left: 18cm;
+}
+
+.video-divAbsolute{
+
+  display: flex;
+  justify-content: space-around;
+}
+
+ .video-right{
+  text-align: start;
+  font-weight: 800;
+  color: #a8d5c7;
+  
+} 
+
+/* Add your image as a background */
+body::before {
+  content: "";
+  position: fixed;
+  top: 2cm;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(""); /* Replace 'your-image.jpg' with your image file path */
+  background-size: cover;
+  z-index: -1;
+  opacity: 0.5; /* Adjust the opacity to control the image visibility */
+}
+h3 {
+  text-align: left;
+}
+/* home pages */
+h1,
+h2 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+.div-background {
+  /* background-color: #101111; */
+  background-image: url("images1.jpg/DOWN4.JPG");
+  background-size: cover;
+}
+
+/* nav {
+  background-color: #080a0c;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+} */
+ul {
+  list-style: none;
+  text-align: right;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+li {
+  margin-right: 20px;
+}
+a {
+  text-decoration: none;
+  color: rgb(244, 238, 238);
+  font-weight: bold;
+  transition: color 0.2s;
+  text-transform: uppercase;
+}
+
+a:hover {
+  color: #0b0b0a; /* Change the color on hover */
+}
+button {
+  background-color: #17c2c2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button a {
+  text-decoration: none;
+  color: white;
+}
+
+/* login */
+.grid-containerProduct {
+  display: flex;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+  grid-auto-flow: dense;
+  padding-bottom: 80px;
+  
+}
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 10px; */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 300px; /* Adjust the width as needed */
+}
+
+label {
+  margin-bottom: 5px; /* Adjust the spacing between labels and inputs */
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 5px; /* Adjust the spacing between input fields */
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+.grid-itemProduct {
+  border: 1px solid #ddd;
+  padding: 0%;
+  padding-bottom: 50px;
+}
+.grid-itemProduct img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+.grid-container {
+  display: flex;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+  grid-auto-flow: dense;
+}
+
+.grid-item {
+  border: 1px solid #ddd;
+  padding: 0%;
+  padding-bottom: 50px;
+}
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+/* footer */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.search {
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.search h2 {
+  color: #333;
+}
+
+.search label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.search input,
+.search select,
+.search button {
+  margin-bottom: 10px;
+}
+
+.search-button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.about {
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.about h2 {
+  color: #333;
+}
+
+.about p {
+  color: #555555;
+}
+
+.learn-more-link,
+.contact-link {
+  text-decoration: none;
+  color: #ecf0f2;
+  display: block;
+  margin-top: 10px;
+}
+
+.icon-container {
+  margin-top: 20px;
+}
+
+.icon-container a {
+  margin-right: 10px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .icon-container {
+    text-align: center;
+  }
+}
+/* Add this to your existing CSS */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Apply the animation to specific elements */
+
+.about,
+.search,
+.icon-container,
+footer {
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Add hover effect to social icons */
+
+.icon-container a:hover {
+  transform: scale(1.2);
+}
+/* Background animation for the 'search' section */
+.search {
+  background: linear-gradient(-45deg, #d9dfe5, #6eccec, #d1e634);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s infinite;
+  color: #fff; /* Set text color to white for better visibility */
+}
+
+/* Background animation for the 'about' section */
+.about {
+  background: linear-gradient(-45deg, #ec6ead, #3494e6, #ec6ead);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s infinite;
+  color: #fff; /* Set text color to white for better visibility */
+}
+
+/* Background animation for the icon container and footer */
+.icon-container,
+footer {
+  background: linear-gradient(-45deg, #3494e6, #ec6ead, #3494e6);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s infinite;
+  color: #fff; /* Set text color to white for better visibility */
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/* buy */
+/* Add some styling to the pricing section */
+#pricing {
+  background-color: #f8f9fa;
+  padding: 60px 0;
+}
+
+.pricing {
+  text-align: center;
+}
+
+.pricing h2 {
+  color: #343a40;
+}
+
+.pricing h3 {
+  font-size: 26px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+.pricing p {
+  font-size: 15px;
+  color: #6c757d;
+}
+
+/* Pricing boxes */
+.pricing .box {
+  background-color: #fff;
+  padding: 30px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin: 0 10px;
+}
+
+.pricing .box h3 {
+  font-size: 24px;
+  color: #007bff;
+}
+
+.pricing .box h4 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #343a40;
+  margin-bottom: 20px;
+}
+
+.pricing .box h4 sup {
+  font-size: 16px;
+}
+
+.pricing .box h4 span {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.pricing .box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.pricing .box ul li {
+  padding: 10px 0;
+}
+
+/* Recommended badge */
+.pricing .recommended-badge {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* Button styling */
+.pricing .btn-wrap {
+  margin-top: 20px;
+}
+
+.pricing .btn-buy {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.pricing .btn-buy:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .pricing .box {
+    margin: 20px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .pricing .box {
+    margin: 20px 10px;
+  }
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between; /* or use "space-between" for space between items */
+  list-style: none;
+  padding: 0;
+}
+.nav-link {
+  text-decoration: none;
+  color: blue;
+}
+
+h6 {
+  font-size: 1.5em; /* Adjust the size to your preference */
+  text-emphasis: none;
+  animation: bounce 1s ease infinite; /* Apply the bounce animation */
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+/* Add other styles as needed */
